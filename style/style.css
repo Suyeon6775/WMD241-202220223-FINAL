@@ -41,7 +41,7 @@ ulli {
 }
 
 a {
-  padding-inline: 1.875rem;
+  padding-inline: 3rem;
   font-weight: 900;
   color: #000;
   text-decoration: none;
@@ -59,7 +59,16 @@ a:hover {
   text-align: center;
   background-color: #000;
 }
-.wrapper__2, .wrapper__3 {
+.wrapper__2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 3rem;
+  text-align: center;
+  background-color: #000;
+}
+.wrapper__3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -104,7 +113,8 @@ a:hover {
   font-size: 2.5rem;
 }
 .wrapper p {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
+  font-weight: 200;
 }
 
 .gallery {
