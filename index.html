@@ -4,8 +4,130 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Final Project</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <script src="./script/script.js" defer></script>
   </head>
   <body>
-    <h1>Project</h1>
+    <nav class="container">
+      <ul class="fixed fixed--pos-br">
+        <li><a href="#home" class="click">Home</a></li>
+        <li><a href="#about" class="click">About</a></li>
+        <li><a href="#portfolio" class="click">Portfolio</a></li>
+        <li><a href="#contact" class="click">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <div id="home" class="wrapper__1">
+        <div class="wrapper__a">
+          <video
+            src="./assets/Practice.mp4"
+            loop
+            autoplay
+            muted
+            playsinline
+          ></video>
+          <h1>Welcome to My Humble Abode</h1>
+        </div>
+      </div>
+      <div id="about" class="wrapper__2">
+        <div class="wrapper__a">
+          <h2>About Me</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero
+            fugiat minus vitae. Quas placeat similique laborum vel porro.
+            Voluptatem alias dolore fuga, deleniti magni dolorum tempora
+            provident voluptas odio excepturi laboriosam numquam sint optio
+            expedita recusandae, ratione dolor suscipit dolorem, exercitationem
+            consequatur! Tempora vero neque at quas deleniti, esse recusandae,
+            assumenda aliquam quisquam a laborum illo quaerat dignissimos!
+            Minima quos voluptatibus eius, beatae alias, dolores commodi placeat
+            ex fugiat nesciunt blanditiis totam quis quam illo consectetur nemo,
+            veritatis labore magnam obcaecati cumque suscipit tempore excepturi.
+            Commodi saepe, veniam eaque tempore id perspiciatis doloribus,
+            dignissimos atque consequuntur reiciendis possimus temporibus optio?
+          </p>
+        </div>
+      </div>
+      <div id="portfolio" class="wrapper__3">
+        <div class="wrapper__a">
+          <h2>My Work</h2>
+          <div class="gallery">
+            <a href="./img2/index.html">
+              <img
+                src="./assets/Screenshot 2024-06-18 at 8.26.30 PM.png"
+                alt="Project 1"
+                class="gallery__item"
+                data-description="Description of Project 1"
+            /></a>
+            <a href="./img1/index.html">
+              <img
+                src="./assets/Beer.png"
+                alt="Project 2"
+                class="gallery__item"
+                data-description="Description of Project 2"
+            /></a>
+            <a href="./img3/index.html">
+              <img
+                src="./assets/3D.png"
+                alt="Project 3"
+                class="gallery__item"
+                data-description="Description of Project 3"
+            /></a>
+            <a href="./img4/index.html">
+              <img
+                src="./assets/behance-65937c9622b23.png"
+                alt="Project 4"
+                class="gallery__item"
+                data-description="Description of Project 4"
+            /></a>
+            <a href="./img5/index.html">
+              <img
+                src="./assets/1.png"
+                alt="Project 5"
+                class="gallery__item"
+                data-description="Description of Project 5"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div id="contact" class="wrapper__4">
+        <div class="wrapper__a">
+          <h2 class="chat" style="font-size: 3.25rem">LET'S CHAT!</h2>
+          <p>I love meeting new people & hearing about new projects</p>
+
+          <div class="box">
+            <div class="box__1">
+              <label for="">First Name *</label>
+              <input clas=" " type="text" maxlength="100" />
+            </div>
+            <div class="box__2">
+              <label for="">Last Name *</label>
+              <input clas=" " type="text" maxlength="100" />
+            </div>
+            <div class="box__3">
+              <label for="">Email *</label>
+              <input clas=" " type="text" maxlength="100" />
+            </div>
+            <div class="box__4">
+              <label for="">Phone</label>
+              <input clas=" " type="text" maxlength="100" />
+            </div>
+            <div class="box__5">
+              <label for="">Message</label>
+              <input clas=" " type="text" maxlength="100" />
+            </div>
+          </div>
+          <div>
+            <button><span>Submit</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <p>
+        &copy;Sangmyung University Department of Communication Design / Su Yeon
+        Kim
+      </p>
+    </div>
   </body>
 </html>
