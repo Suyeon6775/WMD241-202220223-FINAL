@@ -6,6 +6,11 @@ html {
   scroll-behavior: smooth;
 }
 
+:root {
+  font-family: AbrilFatface-Regular;
+  src: url("../fonts/AbrilFatface-Regular.woff") format("woff");
+}
+
 body {
   margin: 0;
   font-weight: 400;
@@ -33,19 +38,19 @@ h1 {
 }
 
 .box {
-  text-align: center;
   padding-top: 3.125rem;
+  text-align: center;
 }
 .box p {
   margin-bottom: 0;
 }
 
 .bottom {
+  justify-content: center;
   width: 100%;
   padding: 10px 0;
   text-align: center;
   background-color: #111;
-  justify-content: center;
 }
 
 video {

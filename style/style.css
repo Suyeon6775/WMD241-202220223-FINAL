@@ -3,12 +3,18 @@
   box-sizing: border-box;
 }
 
+:root {
+  font-family: AbrilFatface-Regular;
+  src: url("../fonts/AbrilFatface-Regular.woff") format("woff");
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
+  overflow-x: hidden;
   font-weight: 400;
   line-height: 1.5625rem;
   color: #fff;
@@ -16,18 +22,18 @@ body {
 }
 
 .container {
-  padding: 1rem 0;
-  background-color: #faff00;
   position: fixed;
   width: 100%;
+  padding: 1rem 0;
+  background-color: #faff00;
 }
 
 ul {
+  display: flex;
+  justify-content: center;
   padding-left: 0;
   margin-block: 0;
   list-style: none;
-  display: flex;
-  justify-content: center;
 }
 ulli {
   display: flex;
@@ -35,11 +41,11 @@ ulli {
 }
 
 a {
+  padding-inline: 1.875rem;
   font-weight: 900;
   color: #000;
   text-decoration: none;
   transition: color 0.3s ease;
-  padding-inline: 1.875rem;
 }
 a:hover {
   color: #474aff;
@@ -71,11 +77,18 @@ a:hover {
   text-align: center;
   background-color: #000;
 }
-.wrapper h1 {
+.wrapper .title1 {
   position: absolute;
-  top: 45%;
-  left: 29.5%;
-  font-size: 3rem;
+  top: 35%;
+  left: 15%;
+  font-size: 5rem;
+  animation: fadeIn 2s ease-in-out;
+}
+.wrapper .title2 {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  font-size: 5rem;
   animation: fadeIn 2s ease-in-out;
 }
 @keyframes fadeIn {
@@ -117,8 +130,8 @@ a:hover {
 }
 
 .wrapper__4 {
-  width: 100%;
   justify-content: center;
+  width: 100%;
 }
 
 .chat {
@@ -128,16 +141,16 @@ a:hover {
 
 .box {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(23.5rem, 3fr));
   grid-template-rows: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(23.5rem, 3fr));
   -moz-column-gap: 2rem;
        column-gap: 2rem;
-  margin-bottom: 2rem;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 .box__1, .box__2, .box__3, .box__4, .box__5 {
-  margin-block: 2.5625rem 1.5rem;
   justify-content: center;
+  margin-block: 2.5625rem 1.5rem;
 }
 .box label {
   font-size: 1.375rem;
@@ -147,9 +160,9 @@ a:hover {
   height: 6.3125rem;
   padding: 0.1875rem 0.1875rem 0.1875rem 1.375rem;
   margin-top: 0.625rem;
-  border-radius: 1.875rem;
   background-color: #faff00;
-  border: solid 0px #fff;
+  border: solid 0 #fff;
+  border-radius: 1.875rem;
 }
 
 button {
@@ -157,28 +170,69 @@ button {
   height: 3.3125rem;
   padding: 0.1875rem 0.1875rem 0.1875rem 1.375rem;
   margin-top: 0.625rem;
-  border-radius: 1.875rem;
   background-color: #faff00;
-  border: solid 0px #fff;
+  border: solid 0 #fff;
+  border-radius: 1.875rem;
 }
 button span {
-  text-align: initial;
+  padding-right: 0.9375rem;
   font-size: 1.5rem;
   font-weight: 700;
-  padding-right: 0.9375rem;
+  text-align: initial;
 }
 
 .bottom {
+  justify-content: center;
   width: 100%;
   padding: 10px 0;
   text-align: center;
   background-color: #111;
-  justify-content: center;
 }
 
 video {
-  margin-top: 3.125rem;
   width: 100%;
   height: auto;
+  margin-top: 3.125rem;
   opacity: 0.2;
+}
+
+.floating {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background-color: #61dafb;
+  border-radius: 50%;
+  animation: floatAnimation 20s infinite linear;
+}
+
+.floating {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background-color: #61dafb;
+  border-radius: 50%;
+  animation: floatAnimation 20s infinite linear;
+}
+
+@keyframes floatAnimation {
+  0% {
+    top: 10%;
+    left: 50%;
+  }
+  25% {
+    top: 30%;
+    left: 80%;
+  }
+  50% {
+    top: 50%;
+    left: 50%;
+  }
+  75% {
+    top: 70%;
+    left: 20%;
+  }
+  100% {
+    top: 90%;
+    left: 50%;
+  }
 }
