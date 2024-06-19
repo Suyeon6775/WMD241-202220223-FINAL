@@ -106,20 +106,6 @@ a:hover {
   font-weight: 200;
 }
 
-.wrapper__a p,
-.wrapper__a h2 {
-  animation-name: reveal;
-  animation-timeline: view();
-}
-@keyframes reveal {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
