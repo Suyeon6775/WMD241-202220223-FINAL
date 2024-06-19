@@ -133,24 +133,6 @@ a {
   }
 }
 
-.wrapper__a {
-  p,
-  h2 {
-    // animation-name: reveal;
-    // animation-timeline: view();
-  }
-
-  // @keyframes reveal {
-  //   0% {
-  //     opacity: 0;
-  //   }
-
-  //   100% {
-  //     opacity: 1;
-  //   }
-  // }
-}
-
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
