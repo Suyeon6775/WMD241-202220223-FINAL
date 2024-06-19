@@ -21,6 +21,7 @@ img {
 .header {
   padding-block: 1.875rem;
   padding-inline: 3.125rem;
+  padding-top: 6rem;
 }
 .header p {
   font-size: 16px;
@@ -32,9 +33,9 @@ h1 {
 }
 
 .bottom {
+  justify-content: center;
   width: 100%;
   padding: 10px 0;
   text-align: center;
   background-color: #111;
-  justify-content: center;
 }

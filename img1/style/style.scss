@@ -8,6 +8,7 @@ html {
 
 body {
   margin: 0;
+
   // font-family: ;
   font-weight: 400;
   line-height: 1.5625rem;
@@ -22,6 +23,7 @@ img {
 .header {
   padding-block: 1.875rem;
   padding-inline: 3.125rem;
+  padding-top: 6rem;
 
   p {
     font-size: 16px;
@@ -34,9 +36,9 @@ h1 {
 }
 
 .bottom {
+  justify-content: center;
   width: 100%;
   padding: 10px 0;
   text-align: center;
   background-color: #111;
-  justify-content: center;
 }

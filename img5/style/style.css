@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.5625rem;
+  color: #fff;
+  background-color: #000;
+}
+
+img {
+  width: 100%;
+  padding-top: 6rem;
+}
+
+.header {
+  padding-block: 1.875rem;
+  padding-inline: 3.125rem;
+  padding-top: 6rem;
+}
+.header p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.box {
+  padding-top: 3.125rem;
+  text-align: center;
+}
+.box p {
+  margin-bottom: 0;
+}
+.box img {
+  padding-block: 1.875rem;
+}
+.box h2 {
+  padding-block: 6.25rem;
+}
+
+.bottom {
+  justify-content: center;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #111;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
