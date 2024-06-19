@@ -3,11 +3,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  font-family: AbrilFatface-Regular;
-  src: url("../fonts/AbrilFatface-Regular.woff") format("woff");
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -42,6 +37,7 @@ ulli {
 
 a {
   padding-inline: 3rem;
+  font-size: 1.3rem;
   font-weight: 900;
   color: #000;
   text-decoration: none;
@@ -65,6 +61,7 @@ a:hover {
   justify-content: center;
   min-height: 100vh;
   padding: 3rem;
+  padding-top: 10rem;
   text-align: center;
   background-color: #000;
 }
@@ -82,23 +79,15 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
-  padding-inline: 10rem;
+  padding-inline: 20rem;
+  padding-bottom: 1rem;
   text-align: center;
   background-color: #000;
 }
 .wrapper .title1 {
-  position: absolute;
-  top: 35%;
-  left: 15%;
-  font-size: 5rem;
-  animation: fadeIn 2s ease-in-out;
-}
-.wrapper .title2 {
-  position: absolute;
-  top: 50%;
-  left: 25%;
-  font-size: 5rem;
-  animation: fadeIn 2s ease-in-out;
+  padding-top: 80px;
+  font-size: 4rem;
+  animation: fadeIn 5s ease-in-out;
 }
 @keyframes fadeIn {
   from {
@@ -115,6 +104,20 @@ a:hover {
 .wrapper p {
   font-size: 1.125rem;
   font-weight: 200;
+}
+
+.wrapper__a p,
+.wrapper__a h2 {
+  animation-name: reveal;
+  animation-timeline: view();
+}
+@keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .gallery {
@@ -142,6 +145,10 @@ a:hover {
 .wrapper__4 {
   justify-content: center;
   width: 100%;
+}
+.wrapper__4 p {
+  font-size: 1.3rem;
+  font-weight: 400;
 }
 
 .chat {
@@ -203,7 +210,6 @@ video {
   width: 100%;
   height: auto;
   margin-top: 3.125rem;
-  opacity: 0.2;
 }
 
 .floating {
